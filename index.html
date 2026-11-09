@@ -1,4 +1,5 @@
-ni<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -23,9 +24,7 @@ ni<!DOCTYPE html>
   padding:0;
 }
 
-html {
-  scroll-behavior:smooth;
-}
+html { scroll-behavior:smooth; }
 
 body {
   background:var(--bg);
@@ -34,10 +33,7 @@ body {
   line-height:1.6;
 }
 
-a {
-  color:inherit;
-  text-decoration:none;
-}
+a { color:inherit; text-decoration:none; }
 
 /* HEADER */
 
@@ -73,9 +69,7 @@ nav a {
   color:#ddd;
 }
 
-nav a:hover {
-  color:var(--gold);
-}
+nav a:hover { color:var(--gold); }
 
 .menu {
   display:none;
@@ -96,8 +90,8 @@ nav a:hover {
   position:relative;
   overflow:hidden;
   background:
-  radial-gradient(ellipse at 78% 45%,#4b351c55,transparent 42%),
-  linear-gradient(115deg,#090909 45%,#17130d);
+    radial-gradient(ellipse at 78% 45%,#4b351c55,transparent 42%),
+    linear-gradient(115deg,#090909 45%,#17130d);
 }
 
 .hero:after {
@@ -127,9 +121,7 @@ h1 {
   margin:23px 0;
 }
 
-h1 span {
-  color:var(--gold);
-}
+h1 span { color:var(--gold); }
 
 .hero p {
   max-width:470px;
@@ -176,9 +168,7 @@ h1 span {
 
 /* GENERAL SECTIONS */
 
-section {
-  padding:100px 9%;
-}
+section { padding:100px 9%; }
 
 .section-tag {
   color:var(--gold);
@@ -216,8 +206,6 @@ section {
   border:1px solid var(--gold);
 }
 
-/* D'KING IMAGE */
-
 .about-art img {
   display:block;
   width:100%;
@@ -234,9 +222,7 @@ section {
 
 /* FILMS */
 
-.films {
-  background:#101010;
-}
+.films { background:#101010; }
 
 .film-grid {
   display:grid;
@@ -251,11 +237,8 @@ section {
   overflow:hidden;
 }
 
-/* POSTER IMAGE BOXES */
-
 .poster {
   aspect-ratio:2/3;
-  min-height:0;
   width:100%;
   position:relative;
   overflow:hidden;
@@ -281,9 +264,7 @@ section {
   background:linear-gradient(145deg,#171717,#34251b 60%,#090909);
 }
 
-.film-info {
-  padding:24px;
-}
+.film-info { padding:24px; }
 
 .film-info h3 {
   font-size:24px;
@@ -315,9 +296,7 @@ section {
 
 /* BOOKS */
 
-.books {
-  background:#0b0b0b;
-}
+.books { background:#0b0b0b; }
 
 .book {
   margin-top:35px;
@@ -345,9 +324,7 @@ section {
   background:#15120d;
 }
 
-.contact .section-title {
-  color:var(--gold);
-}
+.contact .section-title { color:var(--gold); }
 
 .contact-details {
   display:flex;
@@ -363,9 +340,7 @@ section {
   padding-bottom:3px;
 }
 
-.contact-details a:hover {
-  color:var(--gold);
-}
+.contact-details a:hover { color:var(--gold); }
 
 /* FOOTER */
 
@@ -391,17 +366,12 @@ footer {
   transform:none;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:650px) {
+  header { padding:15px 6%; }
 
-  header {
-    padding:15px 6%;
-  }
-
-  .menu {
-    display:block;
-  }
+  .menu { display:block; }
 
   nav {
     display:none;
@@ -415,34 +385,23 @@ footer {
     gap:20px;
   }
 
-  nav.open {
-    display:flex;
-  }
+  nav.open { display:flex; }
 
   .hero {
     padding-left:7%;
     padding-right:7%;
   }
 
-  section {
-    padding:75px 7%;
-  }
+  section { padding:75px 7%; }
 
   .about-grid,
   .film-grid {
     grid-template-columns:1fr;
   }
 
-  .about-art {
-    min-height:220px;
-  }
-
+  .about-art,
   .about-art img {
     min-height:220px;
-  }
-
-  .poster {
-    padding:0;
   }
 
   .hero-mark {
@@ -450,21 +409,15 @@ footer {
     bottom:5%;
   }
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header>
-
   <a href="#home" class="logo">D'KING.</a>
 
-  <button class="menu" id="menu" aria-label="Toggle menu">
-    ☰
-  </button>
+  <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
 
   <nav id="nav">
     <a href="#home">HOME</a>
@@ -473,7 +426,6 @@ footer {
     <a href="#books">BOOKS</a>
     <a href="#contact">CONTACT</a>
   </nav>
-
 </header>
 
 <main>
@@ -481,12 +433,8 @@ footer {
 <!-- HOME -->
 
 <section class="hero" id="home">
-
   <div class="hero-content">
-
-    <div class="eyebrow">
-      INDEPENDENT FILMMAKER
-    </div>
+    <div class="eyebrow">INDEPENDENT FILMMAKER</div>
 
     <h1>D'<span>KING</span></h1>
 
@@ -497,51 +445,33 @@ footer {
     </p>
 
     <div class="actions">
-
-      <a class="btn primary" href="#films">
-        EXPLORE MY FILMS
-      </a>
-
-      <a class="btn" href="#about">
-        DISCOVER MY STORY
-      </a>
-
+      <a class="btn primary" href="#films">EXPLORE MY FILMS</a>
+      <a class="btn" href="#about">DISCOVER MY STORY</a>
     </div>
-
   </div>
 
   <div class="hero-mark">D</div>
-
 </section>
 
 <!-- ABOUT -->
 
 <section id="about">
+  <div class="section-tag">01 / THE STORYTELLER</div>
 
-  <div class="section-tag">
-    01 / THE STORYTELLER
-  </div>
-
-  <h2 class="section-title reveal">
-    Behind the stories.
-  </h2>
+  <h2 class="section-title reveal">Behind the stories.</h2>
 
   <div class="about-grid">
 
-    <!-- SAME IMAGE IN ABOUT SECTION -->
-
     <div class="about-art reveal">
-
       <img
-        src="file_00000000cf54720b989e0e5561ed33d5_20261110_025243_0000.png"
+        src="./file_00000000cf54720b989e0e5561ed33d5_20261110_025243_0000.png"
         alt="D'KING - Darshan R H"
-        loading="lazy"
+        loading="eager"
+        onerror="this.style.display='none'; this.parentElement.style.background='#17130e';"
       >
-
     </div>
 
     <div class="about-copy reveal">
-
       <p>
         I am Darshan R H, known creatively as D'king —
         an independent writer and filmmaker passionate
@@ -565,24 +495,17 @@ footer {
           My vision: Stories that stay beyond the screen.
         </strong>
       </p>
-
     </div>
 
   </div>
-
 </section>
 
 <!-- FILMS -->
 
 <section class="films" id="films">
+  <div class="section-tag">02 / SELECTED WORKS</div>
 
-  <div class="section-tag">
-    02 / SELECTED WORKS
-  </div>
-
-  <h2 class="section-title reveal">
-    Stories on screen.
-  </h2>
+  <h2 class="section-title reveal">Stories on screen.</h2>
 
   <p class="intro">
     Every film begins with an idea.
@@ -594,19 +517,15 @@ footer {
     <!-- AARAMBH -->
 
     <article class="film-card reveal">
-
       <div class="poster one">
-
         <img
-          src="file_00000000023c8211b0050319dc88f4a2.png"
-          alt="AARAMBH film image"
+          src="./file_00000000023c8211b0050319dc88f4a2.png"
+          alt="AARAMBH film poster"
           loading="lazy"
         >
-
       </div>
 
       <div class="film-info">
-
         <h3>AARAMBH</h3>
 
         <p>
@@ -621,32 +540,24 @@ footer {
           A story exploring faith, love, patience and
           the conflict between the heart and the mind.
         </p>
-
       </div>
-
     </article>
 
     <!-- CRIME TOWN -->
 
     <article class="film-card reveal">
-
       <div class="poster two">
-
         <img
-          src="file_00000000b1288211add9c8141fd723b9.png"
-          alt="CRIME TOWN film image"
+          src="./file_00000000b1288211add9c8141fd723b9.png"
+          alt="CRIME TOWN film poster"
           loading="lazy"
         >
-
       </div>
 
       <div class="film-info">
-
         <h3>CRIME TOWN</h3>
 
-        <p>
-          Crime · Thriller
-        </p>
+        <p>Crime · Thriller</p>
 
         <button onclick="toggleInfo('crime')">
           DISCOVER FILM +
@@ -655,6 +566,122 @@ footer {
         <p class="extra" id="crime">
           An independent film written and executed by D'king,
           built around the theme that corruption must
+          come to an end.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- BOOKS -->
+
+<section class="books" id="books">
+  <div class="section-tag">03 / WRITTEN WORDS</div>
+
+  <h2 class="section-title reveal">Beyond cinema.</h2>
+
+  <p class="intro">
+    Stories and ideas also live on the written page.
+  </p>
+
+  <div class="book reveal">
+    <div class="section-tag">A PHILOSOPHICAL EXPLORATION</div>
+
+    <h3>A MAN WITH<br>TWO BRAINS</h3>
+
+    <p>One man. Two minds. Countless questions.</p>
+
+    <p>
+      An exploration of the conflict and balance between
+      emotion and logic — the two voices that shape
+      human decisions.
+    </p>
+
+    <p>
+      <strong style="color:#d6b46a">
+        Written by Darshan R H
+      </strong>
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+  <div class="section-tag">04 / LET'S CONNECT</div>
+
+  <h2 class="section-title reveal">
+    Every great story<br>starts somewhere.
+  </h2>
+
+  <p class="intro" style="margin:0 auto 25px">
+    For creative collaborations, filmmaking
+    and professional enquiries.
+  </p>
+
+  <div class="contact-details">
+    <a href="mailto:techlicens@gmail.com">
+      techlicens@gmail.com
+    </a>
+
+    <a href="tel:+918861627837">
+      +91 88616 27837
+    </a>
+  </div>
+
+  <a class="btn primary" href="mailto:techlicens@gmail.com">
+    GET IN TOUCH
+  </a>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year"></span>
+  D'KING · WRITER · DIRECTOR · STORYTELLER
+</footer>
+
+<script>
+const menu = document.getElementById('menu');
+const nav = document.getElementById('nav');
+
+menu.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+  });
+});
+
+function toggleInfo(id) {
+  const item = document.getElementById(id);
+  item.style.display =
+    item.style.display === 'block' ? 'none' : 'block';
+}
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.12});
+
+document.querySelectorAll('.reveal').forEach(el => {
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
+ theme that corruption must
           come to an end.
         </p>
 
