@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090909">
+
 <title>D'KING | Writer & Director</title>
 <meta name="description" content="Official filmmaker portfolio of D'king, writer, director and storyteller.">
+
 <style>
 :root {
   --bg:#090909;
@@ -14,160 +16,456 @@
   --muted:#a5a19a;
   --panel:#151515;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--white);
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  background:var(--bg);
+  color:var(--white);
   font-family:Arial,Helvetica,sans-serif;
   line-height:1.6;
 }
-a{color:inherit;text-decoration:none}
-header{
-  position:fixed;top:0;width:100%;z-index:10;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:19px 7%;background:#090909eF;
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+/* HEADER */
+
+header {
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:10;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:19px 7%;
+  background:#090909ef;
   border-bottom:1px solid #ffffff12;
   backdrop-filter:blur(12px);
 }
-.logo{font-size:25px;font-weight:900;letter-spacing:4px;color:var(--gold)}
-nav{display:flex;gap:26px}
-nav a{font-size:12px;letter-spacing:1.5px;color:#ddd}
-nav a:hover{color:var(--gold)}
-.menu{display:none;background:none;border:0;color:white;font-size:25px}
-.hero{
-  min-height:100svh;display:flex;align-items:center;
-  padding:130px 9% 90px;position:relative;overflow:hidden;
+
+.logo {
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:4px;
+  color:var(--gold);
+}
+
+nav {
+  display:flex;
+  gap:26px;
+}
+
+nav a {
+  font-size:12px;
+  letter-spacing:1.5px;
+  color:#ddd;
+}
+
+nav a:hover {
+  color:var(--gold);
+}
+
+.menu {
+  display:none;
+  background:none;
+  border:0;
+  color:white;
+  font-size:25px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  padding:130px 9% 90px;
+  position:relative;
+  overflow:hidden;
   background:
   radial-gradient(ellipse at 78% 45%,#4b351c55,transparent 42%),
   linear-gradient(115deg,#090909 45%,#17130d);
 }
-.hero:after{
-  content:"";position:absolute;inset:0;pointer-events:none;
+
+.hero:after {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
   background:linear-gradient(90deg,#090909 0%,transparent 100%);
 }
-.hero-content{position:relative;z-index:1;max-width:750px}
-.eyebrow{color:var(--gold);letter-spacing:5px;font-size:11px}
-h1{
-  font-size:clamp(65px,13vw,145px);line-height:.98;
-  letter-spacing:-5px;margin:23px 0;
+
+.hero-content {
+  position:relative;
+  z-index:1;
+  max-width:750px;
 }
-h1 span{color:var(--gold)}
-.hero p{max-width:470px;color:#c2bdb3;font-size:16px}
-.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}
-.btn{
-  padding:13px 23px;border:1px solid var(--gold);
-  font-size:11px;letter-spacing:2px;display:inline-block;
+
+.eyebrow {
+  color:var(--gold);
+  letter-spacing:5px;
+  font-size:11px;
+}
+
+h1 {
+  font-size:clamp(65px,13vw,145px);
+  line-height:.98;
+  letter-spacing:-5px;
+  margin:23px 0;
+}
+
+h1 span {
+  color:var(--gold);
+}
+
+.hero p {
+  max-width:470px;
+  color:#c2bdb3;
+  font-size:16px;
+}
+
+.actions {
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+  margin-top:34px;
+}
+
+.btn {
+  padding:13px 23px;
+  border:1px solid var(--gold);
+  font-size:11px;
+  letter-spacing:2px;
+  display:inline-block;
   transition:.25s;
 }
-.btn.primary{background:var(--gold);color:#100e09}
-.btn:hover{background:#fff;color:#111;border-color:#fff}
-.hero-mark{
-  position:absolute;right:5%;bottom:9%;font-size:clamp(100px,24vw,300px);
-  color:#ffffff08;font-weight:900;letter-spacing:-15px;
+
+.btn.primary {
+  background:var(--gold);
+  color:#100e09;
 }
-section{padding:100px 9%}
-.section-tag{color:var(--gold);font-size:11px;letter-spacing:4px}
-.section-title{font-size:clamp(32px,6vw,55px);margin:12px 0 18px}
-.intro{color:var(--muted);max-width:650px}
-.about-photo{
-  display:block;width:100%;aspect-ratio:16/9;object-fit:cover;
-  object-position:center 45%;margin:35px 0 38px;
-  border:1px solid var(--gold);
+
+.btn:hover {
+  background:#fff;
+  color:#111;
+  border-color:#fff;
 }
-.about-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:50px;
-  align-items:center;margin-top:35px
+
+.hero-mark {
+  position:absolute;
+  right:5%;
+  bottom:9%;
+  font-size:clamp(100px,24vw,300px);
+  color:#ffffff08;
+  font-weight:900;
+  letter-spacing:-15px;
 }
-.about-art{
-  min-height:300px;display:flex;align-items:center;justify-content:center;
+
+/* GENERAL SECTIONS */
+
+section {
+  padding:100px 9%;
+}
+
+.section-tag {
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:4px;
+}
+
+.section-title {
+  font-size:clamp(32px,6vw,55px);
+  margin:12px 0 18px;
+}
+
+.intro {
+  color:var(--muted);
+  max-width:650px;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+  margin-top:35px;
+}
+
+.about-art {
+  min-height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
   background:radial-gradient(circle,#4c3820,#17130e 60%,#101010);
-  border:1px solid #ffffff18;
-}
-.about-art span{font-size:75px;letter-spacing:8px;color:var(--gold)}
-.about-copy p{color:#bbb;margin-bottom:16px}
-.films{background:#101010}
-.film-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);
-  gap:24px;margin-top:38px
-}
-.film-card{background:var(--panel);border:1px solid #ffffff14;overflow:hidden}
-.poster{
-  aspect-ratio:2/3;min-height:0;width:100%;
-  display:flex;flex-direction:column;
-  justify-content:space-between;padding:25px;
-  position:relative;overflow:hidden;
   border:1px solid var(--gold);
 }
-.poster:before{
-  content:"";position:absolute;inset:0;
-  background:radial-gradient(circle at 50% 45%,#a13c2733,transparent 55%);
+
+/* D'KING IMAGE */
+
+.about-art img {
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:300px;
+  object-fit:contain;
+  object-position:center;
 }
-.poster>*{position:relative}
-.poster.one{background:linear-gradient(145deg,#210e0d,#080808 65%,#3c2118)}
-.poster.two{background:linear-gradient(145deg,#171717,#34251b 60%,#090909)}
-.poster small{letter-spacing:4px;color:var(--gold)}
-.poster strong{
-  font-size:clamp(30px,6vw,60px);line-height:1;
-  letter-spacing:2px;text-shadow:0 4px 20px #000
+
+.about-copy p {
+  color:#bbb;
+  margin-bottom:16px;
 }
-.poster em{font-size:10px;letter-spacing:3px;color:#d4c7ad}
-.film-info{padding:24px}
-.film-info h3{font-size:24px;color:var(--gold);letter-spacing:2px}
-.film-info p{color:var(--muted);font-size:13px;margin:8px 0 15px}
-.film-info button{
-  background:none;border:0;color:var(--gold);cursor:pointer;
-  font-size:12px;letter-spacing:2px
+
+/* FILMS */
+
+.films {
+  background:#101010;
 }
-.extra{
-  display:none;color:#ddd!important;padding-top:12px;
-  border-top:1px solid #ffffff20
+
+.film-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  margin-top:38px;
 }
-.books{background:#0b0b0b}
-.book{
-  margin-top:35px;padding:35px;
+
+.film-card {
+  background:var(--panel);
+  border:1px solid #ffffff14;
+  overflow:hidden;
+}
+
+/* POSTER IMAGE BOXES */
+
+.poster {
+  aspect-ratio:2/3;
+  min-height:0;
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--gold);
+  background:#090909;
+}
+
+.poster img {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain;
+  object-position:center;
+}
+
+.poster.one {
+  background:linear-gradient(145deg,#210e0d,#080808 65%,#3c2118);
+}
+
+.poster.two {
+  background:linear-gradient(145deg,#171717,#34251b 60%,#090909);
+}
+
+.film-info {
+  padding:24px;
+}
+
+.film-info h3 {
+  font-size:24px;
+  color:var(--gold);
+  letter-spacing:2px;
+}
+
+.film-info p {
+  color:var(--muted);
+  font-size:13px;
+  margin:8px 0 15px;
+}
+
+.film-info button {
+  background:none;
+  border:0;
+  color:var(--gold);
+  cursor:pointer;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.extra {
+  display:none;
+  color:#ddd!important;
+  padding-top:12px;
+  border-top:1px solid #ffffff20;
+}
+
+/* BOOKS */
+
+.books {
+  background:#0b0b0b;
+}
+
+.book {
+  margin-top:35px;
+  padding:35px;
   border:1px solid #aa895044;
   background:linear-gradient(110deg,#1c1811,#0c0c0c);
   max-width:700px;
 }
-.book h3{font-size:clamp(27px,5vw,43px);color:var(--gold);line-height:1.15}
-.book p{color:var(--muted);margin-top:15px}
-.contact{text-align:center;background:#15120d}
-.contact .section-title{color:var(--gold)}
-.contact-details{
-  display:flex;justify-content:center;gap:18px 32px;
-  flex-wrap:wrap;margin:0 auto 25px;color:#e8dfce
+
+.book h3 {
+  font-size:clamp(27px,5vw,43px);
+  color:var(--gold);
+  line-height:1.15;
 }
-.contact-details a{border-bottom:1px solid var(--gold);padding-bottom:3px}
-.contact-details a:hover{color:var(--gold)}
-footer{
-  text-align:center;padding:28px 15px;
-  color:#777;font-size:11px;letter-spacing:2px;
-  border-top:1px solid #ffffff12
+
+.book p {
+  color:var(--muted);
+  margin-top:15px;
 }
-.reveal{opacity:0;transform:translateY(22px);transition:.7s}
-.reveal.show{opacity:1;transform:none}
-@media(max-width:650px){
-  header{padding:15px 6%}
-  .menu{display:block}
-  nav{
-    display:none;position:absolute;top:65px;left:0;width:100%;
-    background:#101010;padding:25px;flex-direction:column;gap:20px
+
+/* CONTACT */
+
+.contact {
+  text-align:center;
+  background:#15120d;
+}
+
+.contact .section-title {
+  color:var(--gold);
+}
+
+.contact-details {
+  display:flex;
+  justify-content:center;
+  gap:18px 32px;
+  flex-wrap:wrap;
+  margin:0 auto 25px;
+  color:#e8dfce;
+}
+
+.contact-details a {
+  border-bottom:1px solid var(--gold);
+  padding-bottom:3px;
+}
+
+.contact-details a:hover {
+  color:var(--gold);
+}
+
+/* FOOTER */
+
+footer {
+  text-align:center;
+  padding:28px 15px;
+  color:#777;
+  font-size:11px;
+  letter-spacing:2px;
+  border-top:1px solid #ffffff12;
+}
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity:0;
+  transform:translateY(22px);
+  transition:.7s;
+}
+
+.reveal.show {
+  opacity:1;
+  transform:none;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:650px) {
+
+  header {
+    padding:15px 6%;
   }
-  nav.open{display:flex}
-  .hero{padding-left:7%;padding-right:7%}
-  section{padding:75px 7%}
-  .about-grid,.film-grid{grid-template-columns:1fr}
-  .about-art{min-height:220px}
-  .poster{padding:25px}
-  .hero-mark{right:0;bottom:5%}
+
+  .menu {
+    display:block;
+  }
+
+  nav {
+    display:none;
+    position:absolute;
+    top:65px;
+    left:0;
+    width:100%;
+    background:#101010;
+    padding:25px;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav.open {
+    display:flex;
+  }
+
+  .hero {
+    padding-left:7%;
+    padding-right:7%;
+  }
+
+  section {
+    padding:75px 7%;
+  }
+
+  .about-grid,
+  .film-grid {
+    grid-template-columns:1fr;
+  }
+
+  .about-art {
+    min-height:220px;
+  }
+
+  .about-art img {
+    min-height:220px;
+  }
+
+  .poster {
+    padding:0;
+  }
+
+  .hero-mark {
+    right:0;
+    bottom:5%;
+  }
 }
+
 </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
+
 <header>
+
   <a href="#home" class="logo">D'KING.</a>
-  <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+
+  <button class="menu" id="menu" aria-label="Toggle menu">
+    ☰
+  </button>
+
   <nav id="nav">
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
@@ -175,128 +473,339 @@ footer{
     <a href="#books">BOOKS</a>
     <a href="#contact">CONTACT</a>
   </nav>
+
 </header>
 
 <main>
+
+<!-- HOME -->
+
 <section class="hero" id="home">
+
   <div class="hero-content">
-    <div class="eyebrow">INDEPENDENT FILMMAKER</div>
-    <h1>D'<span>KING</span></h1>
-    <p>Writer. Director. Storyteller.<br>
-    Creating stories that explore human emotions,
-    faith, fear and the reality of life.</p>
-    <div class="actions">
-      <a class="btn primary" href="#films">EXPLORE MY FILMS</a>
-      <a class="btn" href="#about">DISCOVER MY STORY</a>
+
+    <div class="eyebrow">
+      INDEPENDENT FILMMAKER
     </div>
+
+    <h1>D'<span>KING</span></h1>
+
+    <p>
+      Writer. Director. Storyteller.<br>
+      Creating stories that explore human emotions,
+      faith, fear and the reality of life.
+    </p>
+
+    <div class="actions">
+
+      <a class="btn primary" href="#films">
+        EXPLORE MY FILMS
+      </a>
+
+      <a class="btn" href="#about">
+        DISCOVER MY STORY
+      </a>
+
+    </div>
+
   </div>
+
   <div class="hero-mark">D</div>
+
 </section>
+
+<!-- ABOUT -->
 
 <section id="about">
-  <div class="section-tag">01 / THE STORYTELLER</div>
-  <h2 class="section-title reveal">Behind the stories.</h2>
+
+  <div class="section-tag">
+    01 / THE STORYTELLER
+  </div>
+
+  <h2 class="section-title reveal">
+    Behind the stories.
+  </h2>
 
   <div class="about-grid">
-    <div class="about-art reveal"><span>D'K</span></div>
-    <div class="about-copy reveal">
-      <p>I am Darshan R H, known creatively as D'king — an independent writer and filmmaker passionate about cinema and storytelling.</p>
-      <p>My creative world explores the connection between emotions, human choices, faith, relationships and consequences.</p>
-      <p>I believe every story deserves an identity, every character deserves a purpose, and every frame should make the audience feel something.</p>
-      <p><strong style="color:#d6b46a">My vision: Stories that stay beyond the screen.</strong></p>
+
+    <!-- SAME IMAGE IN ABOUT SECTION -->
+
+    <div class="about-art reveal">
+
+      <img
+        src="images/dking-image.png"
+        alt="D'KING - Darshan R H"
+        loading="lazy"
+      >
+
     </div>
+
+    <div class="about-copy reveal">
+
+      <p>
+        I am Darshan R H, known creatively as D'king —
+        an independent writer and filmmaker passionate
+        about cinema and storytelling.
+      </p>
+
+      <p>
+        My creative world explores the connection between
+        emotions, human choices, faith, relationships
+        and consequences.
+      </p>
+
+      <p>
+        I believe every story deserves an identity,
+        every character deserves a purpose, and every
+        frame should make the audience feel something.
+      </p>
+
+      <p>
+        <strong style="color:#d6b46a">
+          My vision: Stories that stay beyond the screen.
+        </strong>
+      </p>
+
+    </div>
+
   </div>
+
 </section>
+
+<!-- FILMS -->
 
 <section class="films" id="films">
-  <div class="section-tag">02 / SELECTED WORKS</div>
-  <h2 class="section-title reveal">Stories on screen.</h2>
-  <p class="intro">Every film begins with an idea. Every idea deserves a cinematic journey.</p>
+
+  <div class="section-tag">
+    02 / SELECTED WORKS
+  </div>
+
+  <h2 class="section-title reveal">
+    Stories on screen.
+  </h2>
+
+  <p class="intro">
+    Every film begins with an idea.
+    Every idea deserves a cinematic journey.
+  </p>
+
   <div class="film-grid">
 
-    <article class="film-card reveal">
-      <div class="poster one">
-        <small>WRITTEN & DIRECTED BY D'KING</small>
-        <strong>AARAMBH</strong>
-        <em>WHEN FAITH BEGINS, FEAR ENDS</em>
-      </div>
-      <div class="film-info">
-        <h3>AARAMBH</h3>
-        <p>Psychological Horror · Devotional · Romance · Thriller</p>
-        <button onclick="toggleInfo('aarambh')">DISCOVER FILM +</button>
-        <p class="extra" id="aarambh">A story exploring faith, love, patience and the conflict between the heart and the mind.</p>
-      </div>
-    </article>
+    <!-- AARAMBH -->
 
     <article class="film-card reveal">
-      <div class="poster two">
-        <small>AN INDEPENDENT FILM BY D'KING</small>
-        <strong>CRIME<br>TOWN</strong>
-        <em>CORRUPTION MUST BE THE END</em>
+
+      <div class="poster one">
+
+        <img
+          src="images/dking-image.png"
+          alt="AARAMBH film image"
+          loading="lazy"
+        >
+
       </div>
+
       <div class="film-info">
-        <h3>CRIME TOWN</h3>
-        <p>Crime · Thriller</p>
-        <button onclick="toggleInfo('crime')">DISCOVER FILM +</button>
-        <p class="extra" id="crime">An independent film written and executed by D'king, built around the theme that corruption must come to an end.</p>
+
+        <h3>AARAMBH</h3>
+
+        <p>
+          Psychological Horror · Devotional · Romance · Thriller
+        </p>
+
+        <button onclick="toggleInfo('aarambh')">
+          DISCOVER FILM +
+        </button>
+
+        <p class="extra" id="aarambh">
+          A story exploring faith, love, patience and
+          the conflict between the heart and the mind.
+        </p>
+
       </div>
+
+    </article>
+
+    <!-- CRIME TOWN -->
+
+    <article class="film-card reveal">
+
+      <div class="poster two">
+
+        <img
+          src="images/dking-image.png"
+          alt="CRIME TOWN film image"
+          loading="lazy"
+        >
+
+      </div>
+
+      <div class="film-info">
+
+        <h3>CRIME TOWN</h3>
+
+        <p>
+          Crime · Thriller
+        </p>
+
+        <button onclick="toggleInfo('crime')">
+          DISCOVER FILM +
+        </button>
+
+        <p class="extra" id="crime">
+          An independent film written and executed by D'king,
+          built around the theme that corruption must
+          come to an end.
+        </p>
+
+      </div>
+
     </article>
 
   </div>
+
 </section>
+
+<!-- BOOKS -->
 
 <section class="books" id="books">
-  <div class="section-tag">03 / WRITTEN WORDS</div>
-  <h2 class="section-title reveal">Beyond cinema.</h2>
-  <p class="intro">Stories and ideas also live on the written page.</p>
-  <div class="book reveal">
-    <div class="section-tag">A PHILOSOPHICAL EXPLORATION</div>
-    <h3>A MAN WITH<br>TWO BRAINS</h3>
-    <p>One man. Two minds. Countless questions.</p>
-    <p>An exploration of the conflict and balance between emotion and logic — the two voices that shape human decisions.</p>
-    <p><strong style="color:#d6b46a">Written by Darshan R H</strong></p>
+
+  <div class="section-tag">
+    03 / WRITTEN WORDS
   </div>
+
+  <h2 class="section-title reveal">
+    Beyond cinema.
+  </h2>
+
+  <p class="intro">
+    Stories and ideas also live on the written page.
+  </p>
+
+  <div class="book reveal">
+
+    <div class="section-tag">
+      A PHILOSOPHICAL EXPLORATION
+    </div>
+
+    <h3>
+      A MAN WITH<br>TWO BRAINS
+    </h3>
+
+    <p>
+      One man. Two minds. Countless questions.
+    </p>
+
+    <p>
+      An exploration of the conflict and balance between
+      emotion and logic — the two voices that shape
+      human decisions.
+    </p>
+
+    <p>
+      <strong style="color:#d6b46a">
+        Written by Darshan R H
+      </strong>
+    </p>
+
+  </div>
+
 </section>
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
-  <div class="section-tag">04 / LET'S CONNECT</div>
-  <h2 class="section-title reveal">Every great story<br>starts somewhere.</h2>
-  <p class="intro" style="margin:0 auto 25px">For creative collaborations, filmmaking and professional enquiries.</p>
-  <div class="contact-details">
-    <a href="mailto:techlicens@gmail.com">techlicens@gmail.com</a>
-    <a href="tel:+918861627837">+91 88616 27837</a>
+
+  <div class="section-tag">
+    04 / LET'S CONNECT
   </div>
-  <a class="btn primary" href="mailto:techlicens@gmail.com">GET IN TOUCH</a>
+
+  <h2 class="section-title reveal">
+    Every great story<br>starts somewhere.
+  </h2>
+
+  <p class="intro" style="margin:0 auto 25px">
+    For creative collaborations, filmmaking
+    and professional enquiries.
+  </p>
+
+  <div class="contact-details">
+
+    <a href="mailto:techlicens@gmail.com">
+      techlicens@gmail.com
+    </a>
+
+    <a href="tel:+918861627837">
+      +91 88616 27837
+    </a>
+
+  </div>
+
+  <a class="btn primary" href="mailto:techlicens@gmail.com">
+    GET IN TOUCH
+  </a>
+
 </section>
+
 </main>
 
+<!-- FOOTER -->
+
 <footer>
-  © <span id="year"></span> D'KING · WRITER · DIRECTOR · STORYTELLER
+
+  © <span id="year"></span>
+  D'KING · WRITER · DIRECTOR · STORYTELLER
+
 </footer>
 
 <script>
-const menu=document.getElementById('menu');
-const nav=document.getElementById('nav');
+
+const menu = document.getElementById('menu');
+const nav = document.getElementById('nav');
+
 menu.addEventListener('click',()=>{
   nav.classList.toggle('open');
 });
+
 nav.querySelectorAll('a').forEach(link=>{
-  link.addEventListener('click',()=>nav.classList.remove('open'));
-});
-function toggleInfo(id){
-  const item=document.getElementById(id);
-  item.style.display=item.style.display==='block'?'none':'block';
-}
-document.getElementById('year').textContent=new Date().getFullYear();
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target);
-    }
+  link.addEventListener('click',()=>{
+    nav.classList.remove('open');
   });
+});
+
+function toggleInfo(id) {
+
+  const item = document.getElementById(id);
+
+  item.style.display =
+    item.style.display === 'block' ? 'none' : 'block';
+
+}
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries=>{
+
+  entries.forEach(entry=>{
+
+    if(entry.isIntersecting){
+
+      entry.target.classList.add('show');
+
+      observer.unobserve(entry.target);
+
+    }
+
+  });
+
 },{threshold:0.12});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.querySelectorAll('.reveal').forEach(el=>{
+  observer.observe(el);
+});
+
 </script>
+
 </body>
 </html>
