@@ -247,12 +247,49 @@ function aboutPage(){
  </div></div></section>`;
 }
 
+/* FILMS PAGE - NOW INCLUDES BTS PHOTOS AND VIDEO SPACE */
 function filmsPage(){
  return `${heading("MY FILMS","THE STORIES I HAVE CREATED")}
  <section><div class="container">
  <a class="back-link" href="./index.html">← BACK TO HOME</a>
  ${filmCards()}
- <div class="buttons">${button("WATCH MY FILMS","watch-films",true)}${button("WATCH TRAILERS","trailers")}</div>
+ <div class="buttons">
+  ${button("WATCH MY FILMS","watch-films",true)}
+  ${button("WATCH TRAILERS","trailers")}
+ </div>
+ </div></section>
+
+ <section><div class="container">
+  <h2 class="section-title">BEHIND THE SCENES</h2>
+  <p class="section-subtitle">A LOOK BEYOND THE FINAL FRAME</p>
+
+  <div class="cards">
+   <article class="card">
+    <img src="${images.bts1}" alt="Behind the scenes photograph">
+    <div class="card-content">
+     <h3>BTS PHOTOGRAPHS</h3>
+     <p>Real moments, memories and experiences from behind the camera.</p>
+     ${button("EXPLORE BTS PHOTOS","bts-photos",true)}
+    </div>
+   </article>
+
+   <article class="card">
+    <div class="media-frame">
+     ${videos.btsVideo
+       ? `<iframe src="${videos.btsVideo}" title="Behind the scenes video" allowfullscreen loading="lazy"></iframe>`
+       : `<div class="media-placeholder">
+           <strong>BTS VIDEO</strong>
+           <p>Your behind-the-scenes video will appear here.</p>
+          </div>`
+     }
+    </div>
+    <div class="card-content">
+     <h3>BTS VIDEOS</h3>
+     <p>Watch the making, shooting moments and experiences behind my films.</p>
+     ${button("WATCH BTS VIDEOS","bts-videos",true)}
+    </div>
+   </article>
+  </div>
  </div></section>`;
 }
 
@@ -348,7 +385,6 @@ function bookPage(){
    <p><strong style="color:var(--gold)">Brain Two — Logic</strong><br>Responsibility, consequences, discipline, experience and reality.</p>
    <p>Neither brain is the enemy. Both are necessary. The challenge is learning when to listen to each one.</p>
    <p><em>One man. Two minds. Countless questions.</em></p>
-
    <div class="buttons">
     <a class="btn filled" href="mailto:${EMAIL}?subject=${subject}&body=${body}">INTERESTED — CONTACT AUTHOR</a>
    </div>
