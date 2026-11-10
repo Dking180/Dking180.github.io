@@ -5,9 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090909">
-
 <title>D'KING | Writer & Director</title>
-<meta name="description" content="Official filmmaker portfolio of D'king, writer, director and storyteller.">
 
 <style>
 :root {
@@ -16,822 +14,432 @@
   --white:#f5f1e9;
   --muted:#a5a19a;
   --panel:#151515;
+  --border:rgba(214,180,106,.38);
 }
 
-* {
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html { scroll-behavior:smooth; }
-
-body {
-  background:var(--bg);
-  color:var(--white);
-  font-family:Arial,Helvetica,sans-serif;
-  line-height:1.6;
-}
-
-a { color:inherit; text-decoration:none; }
-
-/* HEADER */
-
-header {
-  position:fixed;
-  top:0;
-  width:100%;
-  z-index:10;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:19px 7%;
-  background:#090909ef;
-  border-bottom:1px solid #ffffff12;
-  backdrop-filter:blur(12px);
-}
-
-.logo {
-  font-size:25px;
-  font-weight:900;
-  letter-spacing:4px;
-  color:var(--gold);
-}
-
-nav {
-  display:flex;
-  gap:26px;
-}
-
-nav a {
-  font-size:12px;
-  letter-spacing:1.5px;
-  color:#ddd;
-}
-
-nav a:hover { color:var(--gold); }
-
-.menu {
-  display:none;
-  background:none;
-  border:0;
-  color:white;
-  font-size:25px;
-  cursor:pointer;
-}
-
-/* HERO */
-
-.hero {
-  min-height:100svh;
-  display:flex;
-  align-items:center;
-  padding:130px 9% 90px;
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(ellipse at 78% 45%,#4b351c55,transparent 42%),
-    linear-gradient(115deg,#090909 45%,#17130d);
-}
-
-.hero:after {
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  background:linear-gradient(90deg,#090909 0%,transparent 100%);
-}
-
-.hero-content {
-  position:relative;
-  z-index:1;
-  max-width:750px;
-}
-
-.eyebrow {
-  color:var(--gold);
-  letter-spacing:5px;
-  font-size:11px;
-}
-
-h1 {
-  font-size:clamp(65px,13vw,145px);
-  line-height:.98;
-  letter-spacing:-5px;
-  margin:23px 0;
-}
-
-h1 span { color:var(--gold); }
-
-.hero p {
-  max-width:470px;
-  color:#c2bdb3;
-  font-size:16px;
-}
-
-.actions {
-  display:flex;
-  gap:13px;
-  flex-wrap:wrap;
-  margin-top:34px;
-}
-
-.btn {
-  padding:13px 23px;
-  border:1px solid var(--gold);
-  font-size:11px;
-  letter-spacing:2px;
-  display:inline-block;
-  transition:.25s;
-}
-
-.btn.primary {
-  background:var(--gold);
-  color:#100e09;
-}
-
-.btn:hover {
-  background:#fff;
-  color:#111;
-  border-color:#fff;
-}
-
-.hero-mark {
-  position:absolute;
-  right:5%;
-  bottom:9%;
-  font-size:clamp(100px,24vw,300px);
-  color:#ffffff08;
-  font-weight:900;
-  letter-spacing:-15px;
-}
-
-/* GENERAL SECTIONS */
-
-section { padding:100px 9%; }
-
-.section-tag {
-  color:var(--gold);
-  font-size:11px;
-  letter-spacing:4px;
-}
-
-.section-title {
-  font-size:clamp(32px,6vw,55px);
-  margin:12px 0 18px;
-}
-
-.intro {
-  color:var(--muted);
-  max-width:650px;
-}
-
-/* ABOUT */
-
-.about-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
-  margin-top:35px;
-}
-
-.about-art {
-  min-height:300px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  background:radial-gradient(circle,#4c3820,#17130e 60%,#101010);
-  border:1px solid var(--gold);
-}
-
-.about-art img {
-  display:block;
-  width:100%;
-  height:100%;
-  min-height:300px;
-  object-fit:contain;
-  object-position:center;
-}
-
-.about-copy p {
-  color:#bbb;
-  margin-bottom:16px;
-}
-
-/* FILMS */
-
-.films { background:#101010; }
-
-.film-grid {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:24px;
-  margin-top:38px;
-}
-
-.film-card {
-  background:var(--panel);
-  border:1px solid #ffffff14;
-  overflow:hidden;
-}
-
-.poster {
-  aspect-ratio:2/3;
-  width:100%;
-  position:relative;
-  overflow:hidden;
-  border:1px solid var(--gold);
-  background:#090909;
-}
-
-.poster img {
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:contain;
-  object-position:center;
-}
-
-.poster.one {
-  background:linear-gradient(145deg,#210e0d,#080808 65%,#3c2118);
-}
-
-.poster.two {
-  background:linear-gradient(145deg,#171717,#34251b 60%,#090909);
-}
-
-.film-info { padding:24px; }
-
-.film-info h3 {
-  font-size:24px;
-  color:var(--gold);
-  letter-spacing:2px;
-}
-
-.film-info p {
-  color:var(--muted);
-  font-size:13px;
-  margin:8px 0 15px;
-}
-
-.film-info button {
-  background:none;
-  border:0;
-  color:var(--gold);
-  cursor:pointer;
-  font-size:12px;
-  letter-spacing:2px;
-}
-
-.extra {
-  display:none;
-  color:#ddd!important;
-  padding-top:12px;
-  border-top:1px solid #ffffff20;
-}
-
-/* BOOKS */
-
-.books { background:#0b0b0b; }
-
-.book {
-  margin-top:35px;
-  padding:35px;
-  border:1px solid #aa895044;
-  background:linear-gradient(110deg,#1c1811,#0c0c0c);
-  max-width:700px;
-}
-
-.book h3 {
-  font-size:clamp(27px,5vw,43px);
-  color:var(--gold);
-  line-height:1.15;
-}
-
-.book p {
-  color:var(--muted);
-  margin-top:15px;
-}
-
-/* CONTACT */
-
-.contact {
-  text-align:center;
-  background:#15120d;
-}
-
-.contact .section-title { color:var(--gold); }
-
-.contact-details {
-  display:flex;
-  justify-content:center;
-  gap:18px 32px;
-  flex-wrap:wrap;
-  margin:0 auto 25px;
-  color:#e8dfce;
-}
-
-.contact-details a {
-  border-bottom:1px solid var(--gold);
-  padding-bottom:3px;
-}
-
-.contact-details a:hover { color:var(--gold); }
-
-/* FOOTER */
-
-footer {
-  text-align:center;
-  padding:28px 15px;
-  color:#777;
-  font-size:11px;
-  letter-spacing:2px;
-  border-top:1px solid #ffffff12;
-}
-
-/* ANIMATIONS */
-
-.reveal {
-  opacity:0;
-  transform:translateY(22px);
-  transition:.7s;
-}
-
-.reveal.show {
-  opacity:1;
-  transform:none;
-}
-
-/* MOBILE */
-
-@media(max-width:650px) {
-  header { padding:15px 6%; }
-
-  .menu { display:block; }
-
-  nav {
-    display:none;
-    position:absolute;
-    top:65px;
-    left:0;
-    width:100%;
-    background:#101010;
-    padding:25px;
-    flex-direction:column;
-    gap:20px;
-  }
-
-  nav.open { display:flex; }
-
-  .hero {
-    padding-left:7%;
-    padding-right:7%;
-  }
-
-  section { padding:75px 7%; }
-
-  .about-grid,
-  .film-grid {
-    grid-template-columns:1fr;
-  }
-
-  .about-art,
-  .about-art img {
-    min-height:220px;
-  }
-
-  .hero-mark {
-    right:0;
-    bottom:5%;
-  }
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--white);font-family:Georgia,serif;line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:100;background:#090909;border-bottom:1px solid var(--border);padding:17px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;color:var(--gold);font-weight:bold;letter-spacing:4px}
+nav{display:flex;gap:20px}
+nav a{font:11px Arial;letter-spacing:1px;color:var(--muted)}
+nav a:hover{color:var(--gold)}
+.menu-btn{display:none;background:none;border:1px solid var(--gold);color:var(--gold);padding:7px 12px}
+section{padding:75px 7%;border-bottom:1px solid var(--border)}
+.container{max-width:1150px;margin:auto}
+.hero{min-height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse at center,#302719,#090909 70%)}
+.hero h1{font-size:clamp(48px,9vw,88px);color:var(--gold);letter-spacing:8px}
+.hero h2{font-size:16px;letter-spacing:5px;font-weight:normal;margin:12px}
+.hero p,.section-subtitle{color:var(--muted);font:13px Arial;letter-spacing:1px}
+.gold-line{width:75px;height:2px;background:var(--gold);margin:22px auto}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:25px}
+.btn{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:12px 21px;font:11px Arial;letter-spacing:1.2px;text-align:center;transition:.3s}
+.btn:hover{background:var(--gold);color:#090909}
+.btn.filled{background:var(--gold);color:#090909}
+.section-title{text-align:center;color:var(--gold);font-size:32px;letter-spacing:2px;margin-bottom:12px}
+.section-subtitle{text-align:center;margin-bottom:40px}
+.page-heading{text-align:center;padding:70px 15px 40px;background:linear-gradient(#17130d,#090909);border-bottom:1px solid var(--border)}
+.page-heading h1{color:var(--gold);font-size:clamp(30px,6vw,52px);letter-spacing:3px}
+.page-heading p{color:var(--muted);font:13px Arial;margin-top:10px}
+.back-link{display:inline-block;color:var(--gold);font:12px Arial;margin-bottom:25px}
+.about-grid,.detail-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.about-image img{width:100%;max-height:480px;object-fit:cover;border:1px solid var(--gold)}
+.about-text h3,.detail-copy h2{color:var(--gold);font-size:29px;margin-bottom:15px}
+.about-text p,.detail-copy p{color:var(--muted);font:14px/1.8 Arial;margin-bottom:15px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.card{background:var(--panel);border:1px solid var(--border);overflow:hidden;transition:.3s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.card img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block}
+.card-content{padding:20px}
+.card h3{color:var(--gold);font-size:23px;margin-bottom:8px}
+.card p{color:var(--muted);font:13px/1.6 Arial;margin-bottom:15px}
+.detail-poster{width:100%;max-width:390px;display:block;margin:auto;border:1px solid var(--gold)}
+.detail-copy .buttons{justify-content:flex-start}
+.media-frame{width:100%;aspect-ratio:16/9;background:#111;border:1px solid var(--border);margin:20px 0 40px}
+.media-frame iframe,.media-frame video{width:100%;height:100%;border:0}
+.media-placeholder{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;color:var(--muted);font:14px Arial}
+.media-placeholder strong{color:var(--gold);font-size:20px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--border)}
+.thought{background:var(--panel);border-left:2px solid var(--gold);padding:24px;margin-bottom:20px}
+.thought h3{color:var(--gold);margin-bottom:10px}
+.thought p{color:var(--muted);font:14px/1.7 Arial}
+.contact-box{max-width:700px;margin:auto;padding:35px;text-align:center;background:var(--panel);border:1px solid var(--gold)}
+.contact-box p{color:var(--muted);font:14px Arial;margin:14px 0;overflow-wrap:anywhere}
+footer{text-align:center;padding:28px;color:var(--muted);font:11px Arial;letter-spacing:1px;border-top:1px solid var(--border)}
+footer span{color:var(--gold)}
+.loader{position:fixed;inset:0;z-index:9999;background:#090909;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:.6s}
+.loader.hide{opacity:0;visibility:hidden}
+.loader-logo{font-size:90px;color:var(--gold);font-weight:bold}
+.loader-name{letter-spacing:7px}
+.loader-line{width:130px;height:2px;background:var(--gold);margin-top:22px;animation:loading 1.3s infinite}
+@keyframes loading{0%{transform:scaleX(.1)}50%{transform:scaleX(1)}100%{transform:scaleX(.1)}}
+
+@media(max-width:760px){
+ header{padding:15px 5%}
+ .menu-btn{display:block}
+ nav{display:none;position:absolute;top:65px;left:0;right:0;background:#090909;padding:20px;flex-direction:column;border-bottom:1px solid var(--gold)}
+ nav.open{display:flex}
+ .about-grid,.detail-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr}
+ .gallery{grid-template-columns:repeat(2,1fr)}
+ section{padding:60px 6%}
+ .contact-box{padding:25px 15px}
 }
 </style>
 </head>
 
 <body>
 
+<div class="loader" id="loader">
+ <div class="loader-logo">D</div>
+ <div class="loader-name">D'KING</div>
+ <div class="loader-line"></div>
+</div>
+
 <header>
-  <a href="#home" class="logo">D'KING.</a>
-
-  <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
-
-  <nav id="nav">
-    <a href="#home">HOME</a>
-    <a href="#about">ABOUT</a>
-    <a href="#films">FILMS</a>
-    <a href="#books">BOOKS</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+ <a class="logo" href="./index.html">D'KING</a>
+ <button class="menu-btn" onclick="toggleMenu()">☰</button>
+ <nav id="navigation">
+  <a href="./index.html">HOME</a>
+  <a href="?page=about">ABOUT</a>
+  <a href="?page=films">FILMS</a>
+  <a href="?page=trailers">TRAILERS</a>
+  <a href="?page=bts">BTS</a>
+  <a href="?page=book">BOOK</a>
+  <a href="?page=contact">CONTACT</a>
+ </nav>
 </header>
 
-<main>
+<main id="app"></main>
 
-<!-- HOME -->
+<footer>© <span id="year"></span> D'KING | WRITER • DIRECTOR • STORYTELLER</footer>
 
-<section class="hero" id="home">
+<script>
+const EMAIL="techlicens@gmail.com";
+
+const images={
+ portrait:"./file_00000000cf54720b989e0e5561ed33d5_20261110_025243_0000.png",
+ aarambh:"./file_00000000023c8211b0050319dc88f4a2.png",
+ crime:"./file_00000000b1288211add9c8141fd723b9.png",
+ book:"./a-man-with-two-brains-poster.jpg",
+ bts1:"./bts-1.jpg",
+ bts2:"./bts-2.jpg",
+ bts3:"./bts-3.jpg"
+};
+
+/* Add your YouTube embed URLs here */
+const videos={
+ aarambhTrailer:"",
+ crimeTrailer:"",
+ aarambhFilm:"",
+ crimeFilm:"",
+ bookVideo1:"",
+ bookVideo2:"",
+ btsVideo:""
+};
+
+function button(label,page,filled=false){
+ return `<a class="btn ${filled?"filled":""}" href="?page=${page}">${label}</a>`;
+}
+
+function heading(title,subtitle){
+ return `<div class="page-heading"><h1>${title}</h1><p>${subtitle}</p></div>`;
+}
+
+function videoBox(url,title){
+ if(url){
+  return `<div class="media-frame"><iframe src="${url}" title="${title}" allowfullscreen loading="lazy"></iframe></div>`;
+ }
+ return `<div class="media-frame"><div class="media-placeholder"><strong>${title}</strong><p>Video space ready. Add your video URL in the videos section of the code.</p></div></div>`;
+}
+
+function filmCards(){
+ return `<div class="cards">
+  <article class="card">
+   <img src="${images.aarambh}" alt="AARAMBH poster">
+   <div class="card-content"><h3>AARAMBH</h3><p>When faith begins, fear ends.</p>${button("EXPLORE FILM","aarambh")}</div>
+  </article>
+  <article class="card">
+   <img src="${images.crime}" alt="CRIME TOWN poster">
+   <div class="card-content"><h3>CRIME TOWN</h3><p>Corruption must be the end.</p>${button("EXPLORE FILM","crime")}</div>
+  </article>
+ </div>`;
+}
+
+function homePage(){
+ return `
+ <section class="hero">
   <div class="hero-content">
-    <div class="eyebrow">INDEPENDENT FILMMAKER</div>
-
-    <h1>D'<span>KING</span></h1>
-
-    <p>
-      Writer. Director. Storyteller.<br>
-      Creating stories that explore human emotions,
-      faith, fear and the reality of life.
-    </p>
-
-    <div class="actions">
-      <a class="btn primary" href="#films">EXPLORE MY FILMS</a>
-      <a class="btn" href="#about">DISCOVER MY STORY</a>
-    </div>
+   <h1>D'KING</h1><div class="gold-line"></div>
+   <h2>WRITER & DIRECTOR</h2>
+   <p>IMAGINATION • EMOTION • CINEMA</p>
+   <div class="buttons">
+    ${button("EXPLORE MY FILMS","films",true)}
+    ${button("DISCOVER MY STORY","about")}
+    ${button("EXPLORE MY BOOK","book")}
+   </div>
   </div>
+ </section>
 
-  <div class="hero-mark">D</div>
-</section>
-
-<!-- ABOUT -->
-
-<section id="about">
-  <div class="section-tag">01 / THE STORYTELLER</div>
-
-  <h2 class="section-title reveal">Behind the stories.</h2>
-
+ <section><div class="container">
+  <h2 class="section-title">THE CREATOR</h2>
+  <p class="section-subtitle">A STORYTELLER BEHIND THE FRAME</p>
   <div class="about-grid">
-
-    <div class="about-art reveal">
-      <img
-        src="./file_00000000cf54720b989e0e5561ed33d5_20261110_025243_0000.png"
-        alt="D'KING - Darshan R H"
-        loading="eager"
-        onerror="this.style.display='none'; this.parentElement.style.background='#17130e';"
-      >
-    </div>
-
-    <div class="about-copy reveal">
-      <p>
-        I am Darshan R H, known creatively as D'king —
-        an independent writer and filmmaker passionate
-        about cinema and storytelling.
-      </p>
-
-      <p>
-        My creative world explores the connection between
-        emotions, human choices, faith, relationships
-        and consequences.
-      </p>
-
-      <p>
-        I believe every story deserves an identity,
-        every character deserves a purpose, and every
-        frame should make the audience feel something.
-      </p>
-
-      <p>
-        <strong style="color:#d6b46a">
-          My vision: Stories that stay beyond the screen.
-        </strong>
-      </p>
-    </div>
-
+   <div class="about-image"><img src="${images.portrait}" alt="D'KING portrait"></div>
+   <div class="about-text">
+    <h3>Darshan R H</h3>
+    <p>Writer. Director. Storyteller.</p>
+    <p>I believe every story has a soul. Through cinema and writing, I explore human emotions, relationships, faith, fear and the conflicts inside the human mind.</p>
+    ${button("DISCOVER MY STORY","about",true)}
+   </div>
   </div>
-</section>
+ </div></section>
 
-<!-- FILMS -->
+ <section><div class="container">
+  <h2 class="section-title">MY CINEMATIC WORLD</h2>
+  <p class="section-subtitle">STORIES CREATED WITH PASSION</p>
+  ${filmCards()}
+  <div class="buttons">${button("EXPLORE ALL FILMS","films",true)}${button("WATCH TRAILERS","trailers")}</div>
+ </div></section>
 
-<section class="films" id="films">
-  <div class="section-tag">02 / SELECTED WORKS</div>
-
-  <h2 class="section-title reveal">Stories on screen.</h2>
-
-  <p class="intro">
-    Every film begins with an idea.
-    Every idea deserves a cinematic journey.
-  </p>
-
-  <div class="film-grid">
-
-    <!-- AARAMBH -->
-
-    <article class="film-card reveal">
-      <div class="poster one">
-        <img
-          src="./file_00000000023c8211b0050319dc88f4a2.png"
-          alt="AARAMBH film poster"
-          loading="lazy"
-        >
-      </div>
-
-      <div class="film-info">
-        <h3>AARAMBH</h3>
-
-        <p>
-          Psychological Horror · Devotional · Romance · Thriller
-        </p>
-
-        <button onclick="toggleInfo('aarambh')">
-          DISCOVER FILM +
-        </button>
-
-        <p class="extra" id="aarambh">
-          A story exploring faith, love, patience and
-          the conflict between the heart and the mind.
-        </p>
-      </div>
-    </article>
-
-    <!-- CRIME TOWN -->
-
-    <article class="film-card reveal">
-      <div class="poster two">
-        <img
-          src="./file_00000000b1288211add9c8141fd723b9.png"
-          alt="CRIME TOWN film poster"
-          loading="lazy"
-        >
-      </div>
-
-      <div class="film-info">
-        <h3>CRIME TOWN</h3>
-
-        <p>Crime · Thriller</p>
-
-        <button onclick="toggleInfo('crime')">
-          DISCOVER FILM +
-        </button>
-
-        <p class="extra" id="crime">
-          An independent film written and executed by D'king,
-          built around the theme that corruption must
-          come to an end.
-        </p>
-      </div>
-    </article>
-
+ <section><div class="container">
+  <h2 class="section-title">A MAN WITH TWO BRAINS</h2>
+  <p class="section-subtitle">ONE MAN • TWO MINDS • COUNTLESS QUESTIONS</p>
+  <div class="about-grid">
+   <div class="about-image"><img src="${images.book}" alt="Book poster"></div>
+   <div class="about-text">
+    <h3>Written by Darshan R H</h3>
+    <p>A philosophical exploration of the two voices within every human being: emotion and logic.</p>
+    ${button("EXPLORE MY BOOK","book",true)}
+   </div>
   </div>
-</section>
+ </div></section>
 
-<!-- BOOKS -->
+ <section><div class="container">
+  <h2 class="section-title">BEHIND THE SCENES</h2>
+  <p class="section-subtitle">MOMENTS BEHIND THE CAMERA</p>
+  <div class="buttons">${button("BTS PHOTOS","bts-photos",true)}${button("BTS VIDEOS","bts-videos")}</div>
+ </div></section>
 
-<section class="books" id="books">
-  <div class="section-tag">03 / WRITTEN WORDS</div>
-
-  <h2 class="section-title reveal">Beyond cinema.</h2>
-
-  <p class="intro">
-    Stories and ideas also live on the written page.
-  </p>
-
-  <div class="book reveal">
-    <div class="section-tag">A PHILOSOPHICAL EXPLORATION</div>
-
-    <h3>A MAN WITH<br>TWO BRAINS</h3>
-
-    <p>One man. Two minds. Countless questions.</p>
-
-    <p>
-      An exploration of the conflict and balance between
-      emotion and logic — the two voices that shape
-      human decisions.
-    </p>
-
-    <p>
-      <strong style="color:#d6b46a">
-        Written by Darshan R H
-      </strong>
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-  <div class="section-tag">04 / LET'S CONNECT</div>
-
-  <h2 class="section-title reveal">
-    Every great story<br>starts somewhere.
-  </h2>
-
-  <p class="intro" style="margin:0 auto 25px">
-    For creative collaborations, filmmaking
-    and professional enquiries.
-  </p>
-
-  <div class="contact-details">
-    <a href="mailto:techlicens@gmail.com">
-      techlicens@gmail.com
-    </a>
-
-    <a href="tel:+918861627837">
-      +91 88616 27837
-    </a>
-  </div>
-
-  <a class="btn primary" href="mailto:techlicens@gmail.com">
-    GET IN TOUCH
-  </a>
-</section>
-
-</main>
-
-<footer>
-  © <span id="year"></span>
-  D'KING · WRITER · DIRECTOR · STORYTELLER
-</footer>
-
-<script>
-const menu = document.getElementById('menu');
-const nav = document.getElementById('nav');
-
-menu.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
-
-nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-  });
-});
-
-function toggleInfo(id) {
-  const item = document.getElementById(id);
-  item.style.display =
-    item.style.display === 'block' ? 'none' : 'block';
+ <section><div class="container">
+  <h2 class="section-title">LET'S CONNECT</h2>
+  <p class="section-subtitle">FOR ENQUIRIES AND COLLABORATIONS</p>
+  <div class="buttons">${button("CONTACT ME","contact",true)}</div>
+ </div></section>`;
 }
 
-document.getElementById('year').textContent =
-  new Date().getFullYear();
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target);
-    }
-  });
-}, {threshold:0.12});
-
-document.querySelectorAll('.reveal').forEach(el => {
-  observer.observe(el);
-});
-</script>
-
-</body>
-</html>
- theme that corruption must
-          come to an end.
-        </p>
-
-      </div>
-
-    </article>
-
+function aboutPage(){
+ return `${heading("ABOUT D'KING","THE PERSON BEHIND THE STORIES")}
+ <section><div class="container">
+ <a class="back-link" href="./index.html">← BACK TO HOME</a>
+ <div class="about-grid">
+  <div class="about-image"><img src="${images.portrait}" alt="Darshan R H"></div>
+  <div class="about-text">
+   <h3>Darshan R H</h3>
+   <p>Known creatively as D'KING.</p>
+   <p>I am a writer and director interested in stories that connect with people emotionally and psychologically.</p>
+   <p>My work explores love, faith, fear, society, relationships and the human mind.</p>
+   ${button("EXPLORE MY FILMS","films",true)}
+   ${button("EXPLORE MY BOOK","book")}
   </div>
-
-</section>
-
-<!-- BOOKS -->
-
-<section class="books" id="books">
-
-  <div class="section-tag">
-    03 / WRITTEN WORDS
-  </div>
-
-  <h2 class="section-title reveal">
-    Beyond cinema.
-  </h2>
-
-  <p class="intro">
-    Stories and ideas also live on the written page.
-  </p>
-
-  <div class="book reveal">
-
-    <div class="section-tag">
-      A PHILOSOPHICAL EXPLORATION
-    </div>
-
-    <h3>
-      A MAN WITH<br>TWO BRAINS
-    </h3>
-
-    <p>
-      One man. Two minds. Countless questions.
-    </p>
-
-    <p>
-      An exploration of the conflict and balance between
-      emotion and logic — the two voices that shape
-      human decisions.
-    </p>
-
-    <p>
-      <strong style="color:#d6b46a">
-        Written by Darshan R H
-      </strong>
-    </p>
-
-  </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-  <div class="section-tag">
-    04 / LET'S CONNECT
-  </div>
-
-  <h2 class="section-title reveal">
-    Every great story<br>starts somewhere.
-  </h2>
-
-  <p class="intro" style="margin:0 auto 25px">
-    For creative collaborations, filmmaking
-    and professional enquiries.
-  </p>
-
-  <div class="contact-details">
-
-    <a href="mailto:techlicens@gmail.com">
-      techlicens@gmail.com
-    </a>
-
-    <a href="tel:+918861627837">
-      +91 88616 27837
-    </a>
-
-  </div>
-
-  <a class="btn primary" href="mailto:techlicens@gmail.com">
-    GET IN TOUCH
-  </a>
-
-</section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-
-  © <span id="year"></span>
-  D'KING · WRITER · DIRECTOR · STORYTELLER
-
-</footer>
-
-<script>
-
-const menu = document.getElementById('menu');
-const nav = document.getElementById('nav');
-
-menu.addEventListener('click',()=>{
-  nav.classList.toggle('open');
-});
-
-nav.querySelectorAll('a').forEach(link=>{
-  link.addEventListener('click',()=>{
-    nav.classList.remove('open');
-  });
-});
-
-function toggleInfo(id) {
-
-  const item = document.getElementById(id);
-
-  item.style.display =
-    item.style.display === 'block' ? 'none' : 'block';
-
+ </div></div></section>`;
 }
 
-document.getElementById('year').textContent =
-  new Date().getFullYear();
+function filmsPage(){
+ return `${heading("MY FILMS","THE STORIES I HAVE CREATED")}
+ <section><div class="container">
+ <a class="back-link" href="./index.html">← BACK TO HOME</a>
+ ${filmCards()}
+ <div class="buttons">${button("WATCH MY FILMS","watch-films",true)}${button("WATCH TRAILERS","trailers")}</div>
+ </div></section>`;
+}
 
-const observer = new IntersectionObserver(entries=>{
+function filmDetail(type){
+ const a=type==="aarambh";
+ const name=a?"AARAMBH":"CRIME TOWN";
+ const poster=a?images.aarambh:images.crime;
+ const summary=a
+ ?"A psychological, devotional and supernatural story exploring love, faith, patience and the balance between heart and mind. When faith begins, fear ends."
+ :"A film exploring crime, corruption and consequences. Corruption must be the end.";
 
-  entries.forEach(entry=>{
+ return `${heading(name,"A FILM BY DARSHAN R H")}
+ <section><div class="container">
+ <a class="back-link" href="?page=films">← BACK TO FILMS</a>
+ <div class="detail-grid">
+  <img class="detail-poster" src="${poster}" alt="${name} poster">
+  <div class="detail-copy">
+   <h2>${name}</h2>
+   <p>${summary}</p>
+   <p><strong>Written & Directed by:</strong> Darshan R H</p>
+   <div class="buttons">${button("WATCH FILM","watch-films",true)}${button("WATCH TRAILER","trailers")}</div>
+  </div>
+ </div></div></section>`;
+}
 
-    if(entry.isIntersecting){
+function watchFilmsPage(){
+ return `${heading("WATCH MY FILMS","EXPERIENCE MY STORIES")}
+ <section><div class="container">
+ <a class="back-link" href="?page=films">← BACK TO FILMS</a>
+ <h2 class="section-title">AARAMBH</h2>
+ ${videoBox(videos.aarambhFilm,"AARAMBH - Full Film")}
+ <h2 class="section-title">CRIME TOWN</h2>
+ ${videoBox(videos.crimeFilm,"CRIME TOWN - Full Film")}
+ </div></section>`;
+}
 
-      entry.target.classList.add('show');
+function trailersPage(){
+ return `${heading("WATCH TRAILERS","A GLIMPSE INTO MY CINEMATIC WORLD")}
+ <section><div class="container">
+ <a class="back-link" href="?page=films">← BACK TO FILMS</a>
+ <h2 class="section-title">AARAMBH TRAILER</h2>
+ ${videoBox(videos.aarambhTrailer,"AARAMBH Official Trailer")}
+ <h2 class="section-title">CRIME TOWN TRAILER</h2>
+ ${videoBox(videos.crimeTrailer,"CRIME TOWN Official Trailer")}
+ </div></section>`;
+}
 
-      observer.unobserve(entry.target);
+function btsPage(){
+ return `${heading("BEHIND THE SCENES","BEYOND WHAT YOU SEE ON SCREEN")}
+ <section><div class="container">
+ <a class="back-link" href="./index.html">← BACK TO HOME</a>
+ <div class="cards">
+  <div class="card"><div class="card-content"><h3>BTS PHOTOS</h3><p>Moments captured behind the camera.</p>${button("VIEW PHOTOS","bts-photos",true)}</div></div>
+  <div class="card"><div class="card-content"><h3>BTS VIDEOS</h3><p>Watch behind-the-scenes moments.</p>${button("WATCH VIDEOS","bts-videos",true)}</div></div>
+ </div></div></section>`;
+}
 
-    }
+function btsPhotosPage(){
+ return `${heading("BTS PHOTOGRAPHS","MOMENTS BEHIND THE CAMERA")}
+ <section><div class="container">
+ <a class="back-link" href="?page=bts">← BACK TO BTS</a>
+ <div class="gallery">
+  <img src="${images.bts1}" alt="BTS photo 1">
+  <img src="${images.bts2}" alt="BTS photo 2">
+  <img src="${images.bts3}" alt="BTS photo 3">
+ </div></div></section>`;
+}
 
-  });
+function btsVideosPage(){
+ return `${heading("BTS VIDEOS","THE MAKING OF MY STORIES")}
+ <section><div class="container">
+ <a class="back-link" href="?page=bts">← BACK TO BTS</a>
+ ${videoBox(videos.btsVideo,"Behind The Scenes")}
+ <p style="color:var(--muted);font:13px Arial">Your behind-the-scenes videos will play here.</p>
+ </div></section>`;
+}
 
-},{threshold:0.12});
+function bookPage(){
+ const subject=encodeURIComponent("Interested in A Man With Two Brains");
+ const body=encodeURIComponent("Hello Darshan,\n\nI am interested in your book A Man With Two Brains. Please share more details.\n\nThank you.");
 
-document.querySelectorAll('.reveal').forEach(el=>{
-  observer.observe(el);
+ return `${heading("A MAN WITH TWO BRAINS","ONE MAN • TWO MINDS • COUNTLESS QUESTIONS")}
+ <section><div class="container">
+ <a class="back-link" href="./index.html">← BACK TO HOME</a>
+ <div class="detail-grid">
+  <img class="detail-poster" src="${images.book}" alt="A Man With Two Brains book poster">
+  <div class="detail-copy">
+   <h2>A MAN WITH TWO BRAINS</h2>
+   <p><strong>Written by Darshan R H</strong></p>
+   <p>What happens when the heart wants one thing, but the mind understands something else?</p>
+   <p>This book explores the hidden conflict between two forces within us: emotion and logic.</p>
+   <p><strong style="color:var(--gold)">Brain One — Emotion</strong><br>Love, desire, freedom, passion, dreams and instinct.</p>
+   <p><strong style="color:var(--gold)">Brain Two — Logic</strong><br>Responsibility, consequences, discipline, experience and reality.</p>
+   <p>Neither brain is the enemy. Both are necessary. The challenge is learning when to listen to each one.</p>
+   <p><em>One man. Two minds. Countless questions.</em></p>
+
+   <div class="buttons">
+    <a class="btn filled" href="mailto:${EMAIL}?subject=${subject}&body=${body}">INTERESTED — CONTACT AUTHOR</a>
+   </div>
+   <div class="buttons">
+    ${button("WATCH VIDEOS","book-videos")}
+    ${button("THOUGHTS & PHOTOS","book-thoughts")}
+   </div>
+  </div>
+ </div></div></section>`;
+}
+
+function bookVideosPage(){
+ return `${heading("BOOK VIDEOS","A MAN WITH TWO BRAINS")}
+ <section><div class="container">
+ <a class="back-link" href="?page=book">← BACK TO BOOK</a>
+ <h2 class="section-title">INTRODUCTION TO THE BOOK</h2>
+ ${videoBox(videos.bookVideo1,"Book Introduction")}
+ <h2 class="section-title">THE TWO BRAINS</h2>
+ ${videoBox(videos.bookVideo2,"The Two Brains")}
+ </div></section>`;
+}
+
+function bookThoughtsPage(){
+ return `${heading("THOUGHTS & PHOTOS","IDEAS FROM A MAN WITH TWO BRAINS")}
+ <section><div class="container">
+ <a class="back-link" href="?page=book">← BACK TO BOOK</a>
+ <div class="thought"><h3>THE EMOTIONAL BRAIN</h3><p>The voice that says: "I want this." It represents love, desire, freedom, passion, dreams and instinct.</p></div>
+ <div class="thought"><h3>THE LOGICAL BRAIN</h3><p>The voice that asks: "What will happen after this?" It represents responsibility, discipline, experience and consequences.</p></div>
+ <div class="thought"><h3>THE REAL CONFLICT</h3><p>One side wants to experience life. The other side wants to understand the consequences. Both have a purpose.</p></div>
+ <div class="thought"><h3>THE BALANCE</h3><p>The goal is not to silence one brain. It is to understand both before making a decision.</p></div>
+ <h2 class="section-title" style="margin-top:45px">BOOK PHOTO GALLERY</h2>
+ <div class="gallery">
+  <img src="${images.book}" alt="Book cover">
+  <img src="${images.bts1}" alt="Book-related photo">
+  <img src="${images.bts2}" alt="Book-related photo">
+ </div>
+ </div></section>`;
+}
+
+function contactPage(){
+ return `${heading("CONTACT D'KING","LET'S CONNECT")}
+ <section><div class="container">
+ <a class="back-link" href="./index.html">← BACK TO HOME</a>
+ <div class="contact-box">
+  <h2 class="section-title">GET IN TOUCH</h2>
+  <p>For film projects, book enquiries, feedback and collaborations.</p>
+  <p>Email: <a href="mailto:${EMAIL}">${EMAIL}</a></p>
+  <p>Mobile: <a href="tel:+918861627837">+91 88616 27837</a></p>
+  <div class="buttons">
+   <a class="btn filled" href="mailto:${EMAIL}">SEND EMAIL</a>
+   <a class="btn" href="https://wa.me/918861627837" target="_blank" rel="noopener">WHATSAPP</a>
+   <a class="btn" href="https://instagram.com/mr_darshan_h18" target="_blank" rel="noopener">INSTAGRAM</a>
+  </div>
+ </div></div></section>`;
+}
+
+const pages={
+ home:homePage,
+ about:aboutPage,
+ films:filmsPage,
+ aarambh:()=>filmDetail("aarambh"),
+ crime:()=>filmDetail("crime"),
+ "watch-films":watchFilmsPage,
+ trailers:trailersPage,
+ bts:btsPage,
+ "bts-photos":btsPhotosPage,
+ "bts-videos":btsVideosPage,
+ book:bookPage,
+ "book-videos":bookVideosPage,
+ "book-thoughts":bookThoughtsPage,
+ contact:contactPage
+};
+
+function renderPage(){
+ const current=new URLSearchParams(location.search).get("page")||"home";
+ document.getElementById("app").innerHTML=(pages[current]||homePage)();
+ document.title=(current==="home"?"D'KING":current.replaceAll("-"," ").toUpperCase()+" | D'KING");
+ document.getElementById("navigation").classList.remove("open");
+ window.scrollTo(0,0);
+}
+
+function toggleMenu(){
+ document.getElementById("navigation").classList.toggle("open");
+}
+
+document.getElementById("year").textContent=new Date().getFullYear();
+renderPage();
+
+window.addEventListener("load",()=>{
+ setTimeout(()=>document.getElementById("loader").classList.add("hide"),800);
 });
-
 </script>
 
 </body>
